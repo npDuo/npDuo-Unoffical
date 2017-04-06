@@ -34,3 +34,20 @@ ____________________________
 >> \#AvailableNOW
 >>> New:
 >>> + Fix "Write On Wall"
+
+> **0.18 (Fashion)**
+>> Use with Stylish extension to see new launcher!
+>>> New:
+>>> + More beautiful
+>>> + Use with CSS
+
+> 0.19 (Cloudy)
+>> #MAY
+>>> New:
+>>> + Shows stats!
+
+> 1.0 (Galaxy)
+>> Coming up...
+>>> New:
+>>> + Edit stats
+>>> + Special Launcher!
