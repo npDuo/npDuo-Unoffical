@@ -1,0 +1,36 @@
+// ==UserScript==
+// @name            npDuo ShowTree
+// @namespace		duolingo
+// @description		Hiện cây ngôn ngữ của người khác | Phiên bản Galaxy (1.0) | Offical
+// @version			Galaxy (1.0)
+// @author			nguoila05 | nguoilapro@gmail.com
+// @include			https://www.duolingo.com/*
+// @grant			none
+// ==/UserScript==
+
+function inject(f) { //Inject the script into the document
+    var script;
+    script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.setAttribute('name', 'lesson_review');
+    script.textContent = '(' + f.toString() + ')(jQuery)';
+    document.head.appendChild(script);
+}
+inject(f);
+
+function f($) {
+	function th23DuolingoProgress() {
+		if($('#app').hasClass('home')) {
+			if(!$('.sidebar-progress').length) {
+				var th23LanguageData = window.duo.user.attributes.language_data[window.duo.user.attributes.learning_language]; 
+				$('.strengthen-skills-container').before('<div class="sidebar-progress"><div class="sidebar-progress-main"><div title="' + th23LanguageData.level_progress + '/' + th23LanguageData.level_points + ' XP" data-toggle="tooltip" class="language-progress-bar-small"><div class="padder"><div style="width: ' + th23LanguageData.level_percent + '%; max-width: 100%;" class="bar"></div></div><span class="level level-current">' + th23LanguageData.level + '</span><span class="level level-next">' + th23LanguageData.next_level + '</span></div><ul class="sidebar-stats"><li><span class="icon icon-xp-small"></span> <strong>' + th23LanguageData.points + '</strong> XP</li><li><span class="icon icon-words-small">w</span><strong><span id="word-count">' + th23LanguageData.word_count + '</span></strong> Words</li></ul></div></div>'); 
+			}
+		}
+	}
+	$(document).ready(function() {
+		th23DuolingoProgress();
+	}); 
+	$(document).ajaxComplete(function() {
+		th23DuolingoProgress();
+	});
+}
