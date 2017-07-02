@@ -51,11 +51,6 @@ body {
 background: #c157db;
 }
 
-/* Setting */
-.yXIVb:hover{
-background: #c157db
-}
-
 /* Font */
 body {
   font-family: "Arial";
