@@ -1,0 +1,62 @@
+/* Scroll bar */
+::selection { background-color: #9c27b0;}
+::-webkit-scrollbar{height:32px;width:15px}
+::-webkit-scrollbar-thumb{-webkit-box-shadow:inset 2px 2px 3px #c157db;background:#9c27b0}
+::-webkit-scrollbar-thumb:hover{-webkit-box-shadow:inset 2px 2px 11px rgba(0,0,0,.0);background:#9c27b0}
+::-webkit-scrollbar-thumb:active{-webkit-box-shadow:inset 2px 2px 3px rgba(0,0,0,.0);background:#9c27b0}
+
+/* Background */
+body {
+    background: none
+    background-image: url(none);
+    background-attachment: fixed;
+}
+
+/* Nav */
+.topbar-blue, ._6t5Uh, .dropdown-menu>li>a:hover{
+    background: #c157db
+}
+._2QyU5:hover, .uWoNt, .joHzD, .topbar-nav-main>li.active a, .topbar-nav-main>li:hover a, .btn-notifications{
+    background: #9c27b0
+}
+
+/* Discussion */
+.vote-module-small .vote-count, .sticky-discussion-message {
+    background: #c157db !important;
+    color: #ffffff !important;
+    border: none;
+}
+
+/* Button */
+.btn-primary, .btn-blue{
+    background: #c157db;
+    border-color: #c157db
+}
+.btn-primary:hover, .btn-blue:hover{
+    background: #9c27b0;
+    border-color: #9c27b0
+}
+
+/* Home */
+._2cWmF{
+    background: #c157db
+}
+
+._2cWmF:hover{
+    background: #9c27b0
+}
+
+/* Learn */
+._2f1i5 th, ._1ZlfW{
+background: #c157db;
+}
+
+/* Setting */
+.yXIVb:hover{
+background: #c157db
+}
+
+/* Font */
+body {
+  font-family: "Arial";
+}
